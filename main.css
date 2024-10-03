@@ -2,21 +2,29 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+
  }
 
  .container {
      width: 100%;
-     height: 50px;
-     background-color: #f1b9c4;
+     background-color: #05052e;
      position: fixed;
      top: 0;
  }
 
+ div {
+     height: 85px;
+ }
+
  nav {
-     width: 1200px;
-     height: 40px;
-     background-color: #f1b9c4;
+     flex-direction: row-reverse;
+     height: 90px;
      margin: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+
  }
 
  nav ul {
@@ -24,14 +32,79 @@
      display: flex;
      direction: rtl;
      flex-direction: row;
+
  }
 
- nav ul li a {
+ .container ul li a {
      display: block;
-     width: 200px;
-     text-align: center;
      text-decoration: none;
-     font-size: 16pt;
-     color: black;
+     font-size: 25pt;
+     color: white;
+     padding: 3px 25px;
      line-height: 40px;
+     border-radius: 20px;
+     font: normal normal normal 20px/29px Heebo;
+     display: flex;
+
+ }
+
+ .logo {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     padding: 10px;
+
+ }
+
+ .container ul li a:hover {
+     color: black;
+     background-color: #f9c2c2;
+ }
+
+ /*home section*/
+ #Home {
+     display: flex;
+     flex-direction: column;
+     padding: 3px 200px;
+     justify-content: center;
+     text-align: center;
+     background-image: url(images/backgroundflowers.jpeg);
+     position: absolute;
+     width: 100%;
+     height: 600px;
+     z-index: -1;
+     opacity: 0.89;
+ }
+
+ #Home .AboutMe {
+     font-size: 3rem;
+ }
+
+ #Home p {
+     font-size: 2rem;
+ }
+
+ .highlight {
+     font-size: 3rem;
+     color: #05052e;
+
+
+ }
+
+ #Home .btn {
+     width: 200px;
+     height: 50px;
+     background: #05052e 0% 0% no-repeat padding-box;
+     font: normal normal bold 22px/30px Heebo;
+     letter-spacing: 0.33px;
+     color: #ffffff;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+ }
+
+ #Home .btn:hover {
+     color: black;
+     background-color: #f9c2c2;
+     cursor: pointer;
+
  }
