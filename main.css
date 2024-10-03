@@ -68,10 +68,10 @@
      padding: 3px 200px;
      justify-content: center;
      text-align: center;
-     background-image: url(images/backgroundflowers.jpeg);
+     background-image: url(projacts/images/backgroundflowers.jpeg);
      position: absolute;
      width: 100%;
-     height: 600px;
+     height: 650px;
      z-index: -1;
      opacity: 0.89;
  }
@@ -82,6 +82,8 @@
 
  #Home p {
      font-size: 2rem;
+
+
  }
 
  .highlight {
@@ -99,6 +101,7 @@
      letter-spacing: 0.33px;
      color: #ffffff;
      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+     border-radius: 4px;
 
  }
 
@@ -106,5 +109,58 @@
      color: black;
      background-color: #f9c2c2;
      cursor: pointer;
+ }
 
+ /* projacts-section*/
+ projacts-section {}
+
+ #box {
+     margin: 35px;
+     display: flex;
+
+ }
+
+ #box .card {
+     border: 2px solid #05052e;
+     height: 350px;
+     width: 250px;
+     padding: 30px;
+     border-radius: 28px;
+     background-color: #bcbcd6;
+
+
+ }
+
+ #box .card-title {
+     font-size: 2rem;
+     padding: 13px;
+ }
+
+ #box .card img {
+     height: 120px;
+     margin: auto;
+     display: block;
+ }
+
+ #box .btn {
+     width: 100px;
+     background: #05052e 0% 0% no-repeat padding-box;
+     font: normal normal bold 22px/30px Heebo;
+     letter-spacing: 0.33px;
+     color: #ffffff;
+     border-radius: 5px;
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+ }
+
+ #box .btn:hover {
+     color: black;
+     background-color: #f9c2c2;
+     cursor: pointer;
+ }
+
+ #box {}
+
+ projacts-title {
+     font-size: 4rem;
+     padding: 12px;
  }
