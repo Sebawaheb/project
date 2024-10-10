@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-img {
+    /* מאפשר לתמונה למלא את המרחב */
+    text-align: right;
+    flex: 1;
+
+}
+
+.container-img>img {
+    max-width: 100%;
+    /* מתאים את התמונה לגודל שלה */
+    height: auto;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    direction: rtl;
+    flex: 1;
+    padding: 20px;
+}
+
+.from-title {
+    text-align: right;
+    font: normal normal 900 66px/97px Heebo;
+    letter-spacing: 0px;
+    color: #FDBD03
+}
+
+.from-text {
+    font: normal normal normal 20px/29px Heebo;
+    letter-spacing: 0px;
+    color: #020253;
+}
