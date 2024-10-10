@@ -2,14 +2,18 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+ }
 
+ body {
+     background-color: #05052e;
  }
 
  .container {
      width: 100%;
      background-color: #05052e;
-     position: fixed;
+     position: sticky;
      top: 0;
+     z-index: 2;
  }
 
  div {
@@ -69,9 +73,8 @@
      justify-content: center;
      text-align: center;
      background-image: url(projacts/images/backgroundflowers.jpeg);
-     position: absolute;
      width: 100%;
-     height: 650px;
+     height: 600px;
      z-index: -1;
      opacity: 0.89;
  }
@@ -82,15 +85,11 @@
 
  #Home p {
      font-size: 2rem;
-
-
  }
 
  .highlight {
      font-size: 3rem;
      color: #05052e;
-
-
  }
 
  #Home .btn {
@@ -103,6 +102,7 @@
      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
      border-radius: 4px;
 
+
  }
 
  #Home .btn:hover {
@@ -111,35 +111,79 @@
      cursor: pointer;
  }
 
- /* projacts-section*/
- projacts-section {}
+ #logoBaneer {
+     width: 100vw;
+     max-width: 100%;
+     height: 75px;
+     max-width: 100%;
+     border-bottom: 2px solid #ffffff;
+     background-color: #d3abab;
+     padding: 15px 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+
+ /***** projacts-section*****/
+ .projacts-section {
+     justify-content: center;
+     text-align: center;
+     margin: 0 auto;
+     width: 500px;
+ }
+
+ .projacts-title {
+     font-size: 4rem;
+     padding: 12px;
+     margin: 0 auto;
+     color: #ffffff;
+ }
+
+ .projacts-text {
+     font: normal normal normal 32px/43px Heebo;
+     margin: 0 auto;
+     color: #ffffff;
+ }
+
+
+ /* box */
 
  #box {
-     margin: 35px;
      display: flex;
+     margin: 35px;
+     text-align: center;
 
  }
 
  #box .card {
-     border: 2px solid #05052e;
-     height: 350px;
-     width: 250px;
-     padding: 30px;
+     border: 2px;
+     height: 380px;
+     width: 1000px;
+     padding: 28px;
      border-radius: 28px;
-     background-color: #bcbcd6;
-
+     background-color: #3d7d60;
+     margin: 9px;
 
  }
 
  #box .card-title {
-     font-size: 2rem;
+     font: normal normal bold 29px/30px Heebo;
      padding: 13px;
+     color: #ffffff;
+ }
+
+ #box .card-text {
+     font: normal normal bold 20px/30px Heebo;
+     padding: 13px;
+     color: #ffffff;
  }
 
  #box .card img {
      height: 120px;
      margin: auto;
      display: block;
+
  }
 
  #box .btn {
@@ -149,7 +193,8 @@
      letter-spacing: 0.33px;
      color: #ffffff;
      border-radius: 5px;
-     box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+     list-style-type: none;
+     box-shadow: 5px 5px rgba(0, 0, 0, .5);
  }
 
  #box .btn:hover {
@@ -158,9 +203,74 @@
      cursor: pointer;
  }
 
- #box {}
 
- projacts-title {
-     font-size: 4rem;
-     padding: 12px;
+
+ .Contact {
+     display: flex;
+ }
+
+ Contact-img {
+     height: 100vh;
+ }
+
+ .Contact-img>img {
+     height: 400px;
+     width: 60vw;
+     object-fit: cover;
+ }
+
+ .Contact-form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     flex-grow: 1;
+     direction: rtl;
+     height: 500px;
+ }
+
+ .form {
+     width: 60%;
+     height: 300px;
+     display: flex;
+     flex-direction: column;
+     gap: 1em;
+ }
+
+ .form-title {
+     font: normal normal 900 43px/63px Heebo;
+     color: #ffffff;
+ }
+
+ .form-text {
+     font: normal normal normal 20px/29px Heebo;
+     color: #ffffff;
+ }
+
+ .form-control {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .form-control>label {
+     font: normal normal bold 16px/24px Heebo;
+     color: #2c2c2c;
+ }
+
+ .form-control>input {
+     width: 90%;
+     height: 50px;
+     background: #e5eeff 0% 0% no-repeat padding-box;
+     border: 0;
+     border-bottom: 4px solid #05052e;
+ }
+
+ .form>button {
+     width: 166px;
+     height: 50px;
+     background: #05052e 0% 0% no-repeat padding-box;
+     font: normal normal bold 22px/30px Heebo;
+     letter-spacing: 0.33px;
+     color: #ffffff;
+     margin-top: 15px;
  }
