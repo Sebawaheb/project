@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    direction: rtl;
+    font-family: "Heebo", sans-serif;
+    width: 100%;
+    background-color: white;
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+    height: 55%;
+    opacity: 1;
+}
+
+.container-img>img {
+    height: 55%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-form {
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    width: 569px;
+    height: 600px;
+    padding-top: 5%;
+    background: rgba(26, 26, 26, 0.831372549) 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+
+}
+
+.Form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 630px;
+    margin-left: 13%;
+}
+
+.form-title {
+    padding: 2%;
+    text-align: center;
+    font: normal normal 900 36px/53px Heebo;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    width: 140%;
+    margin-top: 15%;
+    margin-right: -10%;
+}
+
+.form-text {
+    width: 140%;
+    margin-right: -10%;
+    text-align: center;
+    font: normal normal normal 20px/29px Heebo;
+    color: #F9F9F9;
+    margin-bottom: 17%;
+
+}
+
+.form-control {
+    text-align: right;
+    font: normal normal normal 20px/29px Heebo;
+
+}
+
+.form-control>label {
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.form-control>input {
+    width: 120%;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D31C75;
+
+}
+
+.Form>button {
+    width: 47%;
+    height: 50px;
+    margin: 17px 0;
+    border: none;
+    margin-top: -3%;
+    background: #D31C75 0% 0% no-repeat padding-box;
+    font: normal normal bold 22px / 30px Heebo;
+    letter-spacing: 0.33px;
+    color: #FFFFFF;
+}
+
+@media (max-width:1280px) {
+    .container-img {
+        height: 450px;
+    }
+
+    .container-form {
+        left: 10%;
+        width: 80%;
+        height: 66%;
+    }
+
+    .form-title {
+        margin-top: 120px;
+        text-align: center;
+        margin-right: 30px;
+        width: 90%;
+        font: normal normal 900 25px/30px Heebo;
+    }
+
+    .form-text {
+        margin-top: 12px;
+        font: normal normal normal 15px/22px Heebo;
+        margin-bottom: 8px;
+    }
+
+    .form-control label {
+        font: normal normal bold 14px/21px Heebo;
+        margin-bottom: 5px;
+    }
+
+    .form-control input {
+        height: 28px;
+        font: normal normal bold 14px/21px Heebo;
+        border: 1px solid #D31C75;
+    }
+
+    .Form button {
+        width: 76px;
+        height: 33px;
+        text-align: center;
+        font: normal normal bold 15px/20px Heebo;
+        letter-spacing: 0.23px;
+        color: #FFFFFF;
+
+    }
+
+}
