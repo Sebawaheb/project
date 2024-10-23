@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500&display=swap");
+
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    direction: rtl;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: auto;
+}
+
+#container {
+    width: 100%;
+    height: 68%;
+    top: 10rem;
+    background: transparent url('img/Path\ 15.png') 0% 0% no-repeat padding-box;
+    background-position: bottom;
+}
+
+.text_top {
+    top: 9%;
+    left: 10%;
+    width: 80%;
+    height: 25%;
+    position: absolute;
+}
+
+.text_top h1 {
+    text-align: center;
+    font: normal normal bold 86px/113px Assistant;
+    letter-spacing: 0px;
+    color: #d3e10e;
+    opacity: 1;
+    margin-bottom: 0%;
+}
+
+.text_top h4 {
+    color: #f9f9f9;
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.text_bottom {
+    width: 85%;
+    left: 7.5%;
+    bottom: 10%;
+    height: 14%;
+    position: absolute;
+    text-align: center;
+}
+
+.form-control {
+    margin: 0% 0% 5% 3%;
+    display: inline-block;
+}
+
+label {
+
+    text-align: right;
+    margin: 1.5%;
+    font: normal normal bold 16px/21px Assistant;
+    display: block;
+    color: #011560;
+}
+
+input {
+    width: 100%;
+    height: 2.4rem;
+    border: none;
+    border-bottom: 4px solid #d3e10e;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+}
+
+button {
+    font: normal normal bold 22px/30px Assistant;
+    letter-spacing: 0.33px;
+    color: #011560;
+    background: #D3E10E 0% 0% no-repeat padding-box;
+    margin-top: 3%;
+    height: 2.6rem;
+    width: 10rem;
+    direction: rtl !important;
+    border: none;
+}
+
+@media (max-width: 1080px) {
+    body {
+        padding-bottom: 10% !important;
+    }
+
+    .form-control {
+        display: block;
+        margin-right: 5%;
+    }
+
+    .text_top h1 {
+        font: normal normal bold 50px/80px Assistant;
+        margin-top: 3%;
+    }
+
+    .text_top {
+        top: 4%;
+    }
+
+    .text_top h4 {
+        font: normal normal normal 16px/26px Assistant;
+    }
+
+    .text_bottom {
+        text-align: center !important;
+    }
+
+    input {
+        width: 80%;
+        height: 34px;
+        background: #E5EEFF 0% 0% no-repeat padding-box;
+    }
+
+    label {
+        font: normal normal bold 10px/14px Heebo;
+        padding-right: 10%;
+
+
+    }
+
+    button {
+        width: 80%;
+        height: 34px;
+        font: normal normal bold 14px/19px Heebo;
+    }
+}
