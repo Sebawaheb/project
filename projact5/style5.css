@@ -79,7 +79,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     max-width: 600px;
-    background-color: #d7aeae;
+    background-color: #254c44;
     border-radius: 8px;
     margin: 0 auto;
     padding: 30px;
@@ -92,7 +92,7 @@ h2 {
     font-size: 40px;
     margin-bottom: 10px;
     padding-left: 90px;
-    color: #0c4332;
+    color: #a45343;
 }
 
 p {
@@ -115,7 +115,7 @@ label {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #0a0a1f;
     border-radius: 4px;
     font-size: 16px;
     text-align: right;
@@ -123,7 +123,7 @@ label {
 }
 
 .btn {
-    background-color: #8d5471;
+    background-color: #a45343;
     color: white;
     padding: 10px 20px;
     border: none;
