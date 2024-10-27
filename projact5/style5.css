@@ -138,3 +138,51 @@ label {
     background-color: #444e63;
 
 }
+
+/*/////////////////////////////////// */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+        padding-right: 0;
+    }
+
+    .container {
+        gap: 15px;
+    }
+
+    .book-card {
+        flex-basis: 100%;
+        max-width: 90%;
+
+    }
+
+    .book-card img {
+        height: 350px;
+    }
+
+    .contact {
+        flex-direction: column;
+        padding: 10px;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .form-control {
+        max-width: 80%;
+    }
+
+    .contact h1 {
+        font-size: 28px;
+        padding-left: 0;
+    }
+
+    p,
+    label {
+        text-align: center;
+        margin-right: 9px;
+    }
+
+    .btn {
+        margin: 10px 0 0;
+    }
+}
