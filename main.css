@@ -143,28 +143,34 @@
  }
 
  #Home .img-home {
-     width: 230px;
+     width: 190px;
+     height: 200px;
      border-radius: 50%;
      z-index: 1;
      margin: 0 auto;
-     padding-bottom: 13px;
+     padding-bottom: -12px;
 
  }
 
  #Home .AboutMe {
      font-size: 3rem;
+     margin-bottom: 2px;
  }
 
  #Home p {
-     font-size: 2rem;
+     font-size: 1.8rem;
+     width: 70%;
+     margin: 0 auto;
  }
 
  .highlight {
-     font-size: 3rem;
+     margin-top: 1.3px;
+     font-size: 2.1rem;
      color: #1c4734;
  }
 
  .click-Me {
+
      display: flex;
      gap: 10px;
      margin-right: 350px;
@@ -456,7 +462,7 @@
 
  @media (max-width: 768px) {
      .logo {
-         margin-right: 360px;
+         margin-right: 80%;
      }
 
      .menu-icon {
