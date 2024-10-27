@@ -82,77 +82,6 @@ nav ul {
     background-color: #f9c2c2;
 }
 
-/* .container {
-    width: 100%;
-    background-color: #0a0a1f;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
-
-.menu-toggle {
-    display: none;
-}
-
-
-.menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-div {
-    height: 85px;
-}
-
-nav {
-    flex-direction: row-reverse;
-    height: 90px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-}
-
-
-.container ul li a {
-    display: block;
-    text-decoration: none;
-    font-size: 25pt;
-    color: white;
-    padding: 3px 25px;
-    line-height: 40px;
-    border-radius: 20px;
-    font: normal normal normal 20px/29px Heebo;
-    display: flex;
-
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    padding: 10px;
-
-}
-
-.container ul li a:hover {
-    color: black;
-    background-color: #f9c2c2;
-} */
 
 /*-----------------------------------------------*/
 
@@ -171,6 +100,19 @@ nav ul {
     margin-top: 110px;
     color: #451a2d;
 
+}
+
+#Portfolio p {
+    text-align: center;
+    font: normal normal 900 20px/55px Heebo;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #451a2d;
+    direction: rtl;
 }
 
 .btn {
@@ -195,17 +137,6 @@ nav ul {
     background-color: #1c4734;
 }
 
-#Portfolio p {
-    text-align: center;
-    font: normal normal 900 20px/55px Heebo;
-    letter-spacing: 0px;
-    color: #ffffff;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    margin-left: 30px;
-    margin-right: 30px;
-    color: #451a2d;
-}
 
 
 /*-----------------------------------------------*/

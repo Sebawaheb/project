@@ -102,8 +102,6 @@
      letter-spacing: 0px;
      color: #ffffff;
      margin-top: 110px;
-
-
  }
 
  /*-----------------------------------------------*/
@@ -571,18 +569,24 @@
          width: 280px;
      }
 
+
+
      #links .link-box {
-         padding-left: 30px;
-         margin-right: 30px;
+         padding-left: 23px;
+         margin-right: 2px;
      }
 
      #links .link-box img {
-         width: 30px;
-         height: 30px;
+         width: 22px;
+         height: 22px;
      }
 
      #links .link-box span {
-         font-size: 8px;
+         font-size: 9.4px;
+     }
+
+     .link-box {
+         margin-bottom: 0px
      }
 
      .link-box {
