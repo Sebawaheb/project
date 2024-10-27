@@ -70,19 +70,17 @@ nav ul {
 }
 
 .logo {
-    width: 85px;
-    height: 85px;
-    margin-right: 83%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+
 }
 
 .Container ul li a:hover {
     color: black;
     background-color: #f9c2c2;
 }
-
-
-
-/*-----------------------------------------------*/
 
 #Portfolio {
     width: 100%;
@@ -138,6 +136,7 @@ nav ul {
 
 
 
+
 /*-----------------------------------------------*/
 
 #LogoBaneer {
@@ -188,7 +187,7 @@ nav ul {
     flex-direction: column;
     align-items: center;
     padding-left: 20px;
-    margin: 10px;
+    margin: 21px;
     width: 8%;
     height: 40px;
     box-sizing: border-box;
@@ -201,9 +200,11 @@ nav ul {
 }
 
 #links span {
-    margin: 8px 0;
+    margin: 6px 0;
     display: inline-block;
     text-align: center;
+    font-size: 18px;
+    color: black;
 
 }
 
@@ -250,9 +251,9 @@ footer {
     }
 
     .logo {
-        width: 80px;
-        height: 80px;
-        margin-right: 375px;
+        width: 85px;
+        height: 85px;
+        margin-right: 83%;
     }
 
     /* Portfolio Section */
@@ -300,16 +301,20 @@ footer {
         width: 100%;
     }
 
-
+    #links {
+        height: 100px;
+        width: 100%
+    }
 
     #links .link-box {
-        padding-left: 30px;
-        margin-right: 30px;
+        padding-left: 20px;
+        margin-right: 20px;
+        margin: 0 auto;
     }
 
     #links .link-box img {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
 
     #links .link-box span {
