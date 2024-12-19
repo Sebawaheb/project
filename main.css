@@ -697,8 +697,9 @@
          height: 30px;
          width: 400px;
          object-fit: cover;
-         margin-right: -600px;
+         margin-right: -550px;
          transition: transform 0.3s ease;
+         margin-top: -20px;
      }
 
      #projacts-section2 #box .card {
