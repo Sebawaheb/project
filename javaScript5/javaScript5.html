@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Builder 5</title>
+    <link rel="stylesheet" href="javaScript5.css">
+    <script src="javaScript5.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="display-area" id="displayArea">
+            <!-- New elements will be displayed here -->
+        </div>
+
+        <div class="form-container">
+            <h2>Screen Builder</h2>
+            <p>Create custom elements and design your screen</p>
+
+            <div class="form-group">
+                <label for="elementType">Element Type</label>
+                <input type="text" id="elementType" placeholder="div, p, button..">
+            </div>
+
+            <div class="form-group">
+                <label for="width">Width</label>
+                <input type="text" id="width" placeholder="100px, 50%..">
+            </div>
+
+            <div class="form-group">
+                <label for="height">Height</label>
+                <input type="text" id="height" placeholder="100px, auto..">
+            </div>
+
+            <div class="form-group">
+                <label for="content">Content</label>
+                <textarea id="content" placeholder="Enter element content"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="bgColor">Background Color</label>
+                <input type="color" id="bgColor" value="#ffffff">
+            </div>
+
+            <div class="form-group">
+                <label for="fontSize">Font Size</label>
+                <input type="text" id="fontSize" placeholder="16px, 1.2rem..">
+            </div>
+
+            <div class="form-group">
+                <label for="fontColor">Font Color</label>
+                <input type="color" id="fontColor" value="#000000">
+            </div>
+
+            <div class="buttons-container">
+                <button onclick="addElement()">Add Element</button>
+                <button onclick="saveLayout()">Save Layout</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
