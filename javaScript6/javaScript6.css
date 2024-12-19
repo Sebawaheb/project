@@ -1,0 +1,85 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white;
+            overflow: hidden;
+        }
+
+        .game-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        #score,
+        #timer {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            font-weight: 300;
+        }
+
+        #reaction-btn {
+            width: 200px;
+            height: 100px;
+            font-size: 1.5rem;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 15px;
+            position: absolute;
+            transition: all 0.1s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        #reaction-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        #game-over {
+            display: none;
+            font-size: 2rem;
+            color: #ff6b6b;
+            margin-top: 20px;
+        }
+
+        #restart-btn {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background: linear-gradient(45deg, #4ecdc4, #45b7d1);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            display: none;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        #restart-btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(45deg, #45b7d1, #2ab1c6);
+        }
