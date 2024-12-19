@@ -6,6 +6,7 @@
 
  html {
      scroll-behavior: smooth;
+     height: 100%;
  }
 
  body {
@@ -14,19 +15,23 @@
  }
 
  /*------------------------------------------------------*/
-
  .container {
      width: 100%;
      background-color: #0a0a1f;
      position: sticky;
      top: 0;
      z-index: 2;
+     transition: background-color 0.3s ease;
+ }
+
+ .container:hover {
+     background-color: #1c4734;
+
  }
 
  .menu-toggle {
      display: none;
  }
-
 
  .menu-icon {
      display: none;
@@ -35,6 +40,11 @@
      position: absolute;
      top: 20px;
      right: 20px;
+     transition: transform 0.3s ease;
+ }
+
+ .menu-icon:hover {
+     transform: rotate(90deg);
  }
 
  div {
@@ -48,8 +58,11 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
+     transition: all 0.3s ease;
+ }
 
-
+ nav:hover {
+     transform: translateY(-5px);
  }
 
  nav ul {
@@ -59,7 +72,6 @@
      margin: 0;
      padding: 0;
  }
-
 
  .container ul li a {
      display: block;
@@ -71,7 +83,14 @@
      border-radius: 20px;
      font: normal normal normal 20px/29px Heebo;
      display: flex;
+     transition: all 0.3s ease;
+ }
 
+ .container ul li a:hover {
+     color: black;
+     background-color: #f9c2c2;
+     transform: scale(1.05);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
  }
 
  .logo {
@@ -79,13 +98,13 @@
      height: 100px;
      border-radius: 50%;
      padding: 10px;
-
+     transition: transform 0.3s ease;
  }
 
- .container ul li a:hover {
-     color: black;
-     background-color: #f9c2c2;
+ .logo:hover {
+     transform: rotate(360deg);
  }
+
 
  /*-----------------------------------------------*/
 
@@ -169,11 +188,14 @@
      color: #1c4734;
  }
 
- .click-Me {
 
+
+ .click-Me {
      display: flex;
+     justify-content: center;
+     align-items: center;
      gap: 10px;
-     margin-right: 350px;
+     margin-top: -24px;
  }
 
  .click-Me .btn {
@@ -212,7 +234,23 @@
      text-align: center;
      margin-left: 30px;
      margin-right: 30px;
+     margin-bottom: 50px;
+     /* הוספת רווח בתחתית כל סקשן */
  }
+
+ #projacts-section2 {
+     justify-content: center;
+     margin: 0 auto;
+     padding: 50px 0;
+     text-align: center;
+     margin-left: 30px;
+     margin-right: 30px;
+     margin-bottom: 500px;
+     margin-top: 750px;
+     /* הוספת רווח בתחתית כל סקשן */
+ }
+
+
 
  .projacts-title {
      font-size: 4rem;
@@ -222,11 +260,25 @@
  }
 
  .projacts-text {
-     font: normal normal normal 32px/43px Heebo;
+
+     font-size: 32px;
      margin: 0 auto;
      color: #ffffff;
  }
 
+ .projacts-title2 {
+     font-size: 4rem;
+     padding: 12px;
+     margin: 0 auto;
+     color: #4f0505;
+ }
+
+ .projacts-text2 {
+
+     font-size: 32px;
+     margin: 0 auto;
+     color: #ffffff;
+ }
 
 
  #box {
@@ -245,7 +297,7 @@
      border-radius: 13px;
      padding: 0;
      width: calc(24.333%);
-     height: 428px;
+     height: 490px;
      box-sizing: border-box;
      text-align: center;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -254,6 +306,12 @@
      margin-left: 10px;
      margin-right: 10px;
 
+ }
+
+ #box .card:hover {
+     transform: scale(1.05);
+     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+     background-color: #094d36;
  }
 
  #box .card-title {
@@ -281,6 +339,7 @@
 
  #box .card img:hover {
      transform: translateY(-5px);
+     transition: transform 0.3s ease;
  }
 
  .logos {
@@ -293,6 +352,11 @@
  #box .card .logos img {
      width: 30px;
      height: 30px;
+ }
+
+ #box .card .logos img:hover {
+     transform: rotate(10deg) scale(1.2);
+     transition: transform 0.3s ease;
  }
 
  .btn {
@@ -311,42 +375,65 @@
 
  #box .btn:hover {
      color: #ffffff;
-     background-color: #070b1e;
      cursor: pointer;
+     transform: scale(1.05);
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+     background: linear-gradient(90deg, #1b1b5f3c, #0c102a);
+     box-shadow: 0 4px 10px rgba(24, 44, 101, 0.5);
 
  }
 
  /*------------------------------------------------------*/
 
+
  #Contact {
      display: flex;
      background-color: #d3abab;
-     width: 80%;
+     width: 70%;
      height: 600px;
      position: relative;
-     margin: 700px auto 0;
-     border-radius: 15px;
+     margin: auto;
+     margin-top: 1000px;
+     border-radius: 30px;
+     margin-bottom: -200px;
+     transition: background-color 0.3s ease;
+     flex-direction: row-reverse;
 
  }
 
+ #Contact:hover {
+     background-color: #e4c7c7;
+ }
 
  #Contact img {
-     height: 400px;
-     width: 100%;
+     height: 600px;
+     width: 1000px;
      object-fit: cover;
-     margin-right: 12px;
+     margin-right: -600px;
+     transition: transform 0.3s ease;
  }
 
+ #Contact img:hover {
+     transform: scale(1.05);
+ }
 
  .Contact-form {
      display: flex;
      flex-direction: column;
-     align-items: center;
+     align-items: flex-end;
+
      justify-content: center;
      flex-grow: 1;
      direction: rtl;
      height: 500px;
      margin-top: -6.2%;
+     transition: transform 0.3s ease;
+     text-align: right;
+
+ }
+
+ .Contact-form:hover {
+     transform: translateY(-10px);
  }
 
  .form {
@@ -355,27 +442,42 @@
      display: flex;
      flex-direction: column;
      gap: 1em;
+     transition: all 0.3s ease;
+     align-items: flex-end;
+     margin-left: 40px;
+ }
+
+ .form:hover {
+     transform: scale(1.02);
  }
 
  .form-title {
      font: normal normal 900 50px/63px Heebo;
      color: #05052e;
+     margin-top: 30px;
+     text-align: right;
  }
 
  .form-text {
      font: normal normal normal 23px/29px Heebo;
      color: #ffffff;
-     width: 300px;
+     width: 400px;
+     text-align: right;
+     /* Align text to the right */
  }
 
  .form-control {
      display: flex;
      flex-direction: column;
+     align-items: flex-end;
+     /* Align form controls to the right */
  }
 
  .form-control label {
      font: normal normal bold 18px/24px Heebo;
      color: #2c2c2c;
+     align-self: flex-end;
+
  }
 
  .form-control input {
@@ -384,6 +486,14 @@
      background: #e5eeff 0% 0% no-repeat padding-box;
      border: 0;
      border-bottom: 4px solid #4f0505;
+     transition: all 0.3s ease;
+     text-align: right;
+
+ }
+
+ .form-control input:hover {
+     border-color: #05052e;
+     background-color: #dfeaff;
  }
 
  .form button {
@@ -395,30 +505,40 @@
      color: #ffffff;
      margin-top: 15px;
      border-radius: 10px;
+     transition: background-color 0.3s ease, transform 0.3s ease;
+     align-self: flex-end;
+     /* Align button to the right */
  }
 
  .form button:hover {
      background-color: #4f0505;
+     transform: translateY(-5px);
+ }
 
+ .form button:active {
+     transform: translateY(2px);
  }
 
  /*---------------------------------------------*/
 
-
  #links {
+     width: 100%;
      background-color: #1c4734;
      text-align: center;
      padding: 25px 0;
      direction: ltr;
-     margin: 0;
      padding-left: 10% !important;
      padding-right: 10% !important;
-     margin-top: 80px;
      display: flex;
      flex-wrap: wrap;
      justify-content: space-around;
-
+     width: 100%;
+     position: absolute;
+     left: 0;
+     margin-bottom: 0px !important;
+     margin-top: 370px;
  }
+
 
  .link-box {
      border-radius: 15px 15px;
@@ -456,13 +576,18 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     height: 55px;
-
+     height: 100px;
+     position: absolute;
+     left: 0;
+     margin-top: 500px;
  }
+
+ /* ///////////////////////////////////////// */
+
 
  @media (max-width: 768px) {
      .logo {
-         margin-right: 80%;
+         margin-right: 370px;
      }
 
      .menu-icon {
@@ -470,7 +595,6 @@
          color: #ddd;
      }
 
-     /* Hide the menu initially */
      nav ul {
          display: none;
          flex-direction: column;
@@ -502,7 +626,7 @@
      }
 
      #Home p {
-         font-size: 1.6rem;
+         font-size: 1.2rem;
      }
 
      .highlight {
@@ -525,11 +649,27 @@
 
      }
 
+
      .projacts-title {
          font-size: 3.4rem;
          padding: 12px;
          margin: 0 auto;
          color: #4f0505;
+         margin-top: 30px;
+     }
+
+     .projacts-title2 {
+         font-size: 3.4rem;
+         padding: 12px;
+         margin: 0 auto;
+         color: #4f0505;
+         margin-top: 200px;
+     }
+
+     .projacts-text2 {
+         font: normal normal normal 20px/35px Heebo;
+         margin: 0 auto;
+         color: #ffffff;
      }
 
      .projacts-text {
@@ -542,8 +682,29 @@
          font-size: 40px;
      }
 
-     .projacts-title {
-         font-size: 2.5rem;
+     #projacts-section {
+         margin-bottom: 1300px;
+     }
+
+
+     #projacts-section2 {
+         margin-top: 2800px;
+         width: 100%;
+         margin-left: 7px;
+     }
+
+     #Contact img {
+         height: 30px;
+         width: 400px;
+         object-fit: cover;
+         margin-right: -600px;
+         transition: transform 0.3s ease;
+     }
+
+     #projacts-section2 #box .card {
+         width: 170%;
+         display: block;
+         margin-bottom: 20px;
      }
 
      #box .card {
@@ -552,30 +713,83 @@
          margin-bottom: 20px;
      }
 
+     #projacts-section2 .card .btn {
+         width: 50%;
+     }
+
      #box .card .btn {
          width: 50%;
      }
 
-     #Contact {
-         margin-top: 2750px;
 
+     #Contact {
+         flex-direction: column;
+         width: 95%;
+         height: auto;
+         margin-top: 3200px;
+         margin-bottom: 50px;
+         padding: 20px 0;
      }
 
-     .form-control input {
-         width: 240px;
-         height: 34px;
+     #Contact img {
+         height: 250px;
+         width: 100%;
+         margin-left: 0;
+         margin-bottom: 20px;
+     }
+
+     .Contact-form {
+         width: 100%;
+         align-items: center;
+         margin-top: 0;
+         padding: 0 20px;
+         margin-left: -15px;
+     }
+
+     .form {
+         width: 100%;
+         height: auto;
+         align-items: center;
      }
 
      .form-title {
-         font-size: 38px;
-         margin-top: -8px;
+         font-size: 35px;
+         margin-top: 10px;
+         text-align: center;
      }
 
      .form-text {
-         width: 280px;
+         font-size: 18px;
+         width: 100%;
+         text-align: center;
      }
 
+     .form-control {
+         width: 100%;
+         align-items: center;
+     }
 
+     .form-control label {
+         font-size: 16px;
+         align-self: center;
+     }
+
+     .form-control input {
+         width: 100%;
+         max-width: 350px;
+         text-align: right;
+     }
+
+     .form button {
+         width: 100%;
+         max-width: 200px;
+         align-self: center;
+         margin-bottom: 19px;
+     }
+
+     #links {
+         margin-top: 30px;
+     }
 
      #links .link-box {
          padding-left: 23px;
@@ -597,5 +811,9 @@
 
      .link-box {
          margin-bottom: 0px
+     }
+
+     footer {
+         margin-top: 139px;
      }
  }
