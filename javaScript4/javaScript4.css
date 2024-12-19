@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* עיצוב גוף הדף */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(img/math.jpg);
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* מכולה מרכזית */
+#container {
+    background-color: #dac2c2;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 5);
+    padding: 20px;
+    width: 95%;
+    max-width: 500px;
+    height: 50vh;
+    text-align: center;
+
+}
+
+/* כותרת */
+h1 {
+    font-size: 24px;
+    color: #161734;
+    margin-bottom: 12px;
+    margin-top: 50px;
+}
+
+/* תצוגת השאלה */
+#num1,
+#num2,
+#op {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+/* שדה התשובה */
+#sum {
+    font-size: 18px;
+    padding: 8px;
+    margin: 10px 0;
+    width: 80px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* כפתורים */
+button {
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* כפתור בדוק */
+#check {
+    background-color: #94825f;
+    color: #ffffff;
+}
+
+#check:hover {
+    background-color: #a76c25;
+}
+
+/* כפתור הבא */
+#next {
+    background-color: #2e6070;
+    color: #ffffff;
+}
+
+#next:hover {
+    background-color: #007BB5;
+}
+
+/* הודעות */
+#message {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* הצלחה */
+#message.green {
+    color: green;
+}
+
+/* שגיאה */
+#message.red {
+    color: red;
+}
